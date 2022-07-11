@@ -50,7 +50,7 @@ class _PengajuanKreditState extends State<PengajuanKredit> {
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 105),
+                      padding: EdgeInsets.only(top: 105),
                       child: Center(
                         child: Container(
                           child: Text("Pengajuan Kredit", style: TextStyle(
@@ -77,7 +77,6 @@ class _PengajuanKreditState extends State<PengajuanKredit> {
                             ]
                         ),
                         width: MediaQuery.of(context).size.width,
-                        height: MediaQuery.of(context).size.width,
                         child: Container(
                           margin: EdgeInsets.all(5),
 

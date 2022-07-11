@@ -15,9 +15,12 @@ class SplashScreen extends StatelessWidget {
       children: [
         AnimatedSplashScreen(splash: Column(
           children: [
-            Center(
-              child: Image.asset("assets/images/logos.png",
-                width: MediaQuery.of(context).size.width/1.3,),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Center(
+                child: Image.asset("assets/images/logos.png",
+                  width: MediaQuery.of(context).size.width),
+              ),
             ),
             Spacer(),
             SpinKitCircle(
@@ -30,7 +33,7 @@ class SplashScreen extends StatelessWidget {
           duration: 4000,
           splashTransition: SplashTransition.fadeTransition,
           nextScreen: OnboardingScreen(Homepage(),),
-          splashIconSize: 250,)
+          splashIconSize: MediaQuery.of(context).size.width,)
       ],
 
     );

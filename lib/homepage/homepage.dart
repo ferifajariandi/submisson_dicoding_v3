@@ -197,7 +197,6 @@ class _CarouselWithIndicatorState extends State<Homepage> {
               Center(
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.width / 4.3,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: const BorderRadius.only(
@@ -304,7 +303,6 @@ class _CarouselWithIndicatorState extends State<Homepage> {
               // Button ICON CONTAINER KE 2
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.width / 4,
                 color: Colors.white,
                 child: Padding(
                   padding:
@@ -400,7 +398,6 @@ class _CarouselWithIndicatorState extends State<Homepage> {
               //Awal Container button icons 3
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.width / 4,
                 color: Colors.white,
                 child: Padding(
                   padding:
@@ -496,7 +493,6 @@ class _CarouselWithIndicatorState extends State<Homepage> {
 
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.width / 4,
                 color: Colors.white,
                 child: Padding(
                   padding:
@@ -593,7 +589,6 @@ class _CarouselWithIndicatorState extends State<Homepage> {
                   child: Container(
                     color: Colors.white,
                     width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.width / 2,
                     child: Column(
                       children: [
                         Padding(
@@ -761,6 +756,28 @@ class _CarouselWithIndicatorState extends State<Homepage> {
                             ),
                           ],
                         ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                "90 Bulan",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 14,
+                                ),
+                              ),
+                              Text(
+                                "9,25%",
+                                style: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                     // decoration: BoxDecoration(
@@ -785,7 +802,7 @@ class _CarouselWithIndicatorState extends State<Homepage> {
                 padding: const EdgeInsets.only(top: 0),
                 child: Container(
                   color: Colors.white,
-                  height: MediaQuery.of(context).size.width/1.7,
+                  height: 250,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
@@ -822,7 +839,6 @@ class _CarouselWithIndicatorState extends State<Homepage> {
                 padding: const EdgeInsets.only(top: 10),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.width/3.6,
                   color: Colors.white,
                   child: Column(
                     children: [
