@@ -123,20 +123,19 @@ class KreditMusiman extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                    top: 50, left: 30, right: 30,),
+                    top: 20, left: 70, right: 30,),
                   child: GestureDetector(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         ButtonRiplay(title: "Ajukan Kredit",),
-                        ButtonRiplay(title: "Lihat Brosur",)
                       ],
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                    top: 20, left: 100, right: 30,),
+                    top: 20, left: 70, right: 30,),
                   child: GestureDetector(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -170,7 +169,7 @@ class ButtonRiplay extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         color: kPrimaryColor,
       ),
-      width: 170,
+      width: MediaQuery.of(context).size.width / 1.5,
       height: 40,
       child: TextButton(
         onPressed: (){},
@@ -179,7 +178,7 @@ class ButtonRiplay extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
-            fontSize: 12,
+            fontSize: 14,
           ),
         ),
       ),
@@ -202,7 +201,7 @@ class ButtonRiplays extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         color: kPrimaryColor,
       ),
-      width: MediaQuery.of(context).size.width/2,
+      width: MediaQuery.of(context).size.width/1.5,
       height: 40,
       child: TextButton(
         onPressed: (){},

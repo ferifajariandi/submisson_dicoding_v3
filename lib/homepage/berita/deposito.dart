@@ -125,9 +125,6 @@ class DepositoScreen extends StatelessWidget {
                       ButtonDeposito(
                         title: 'Isi Aplikasi',
                       ),
-                      ButtonDeposito(
-                        title: 'Ringkasan Produk',
-                      )
                     ],
                   ),
                 )
@@ -151,22 +148,24 @@ class ButtonDeposito extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(40, 20, 20, 20),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: kPrimaryColor,
-        ),
-        width: 140,
-        height: 40,
-        child: TextButton(
-          onPressed: () {},
-          child: Text(
-            title,
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: 13,
+      padding: const EdgeInsets.fromLTRB(60, 20, 20, 20),
+      child: Center(
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: kPrimaryColor,
+          ),
+          width: MediaQuery.of(context).size.width / 1.5,
+          height: MediaQuery.of(context).size.height / 13,
+          child: TextButton(
+            onPressed: () {},
+            child: Text(
+              title,
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
             ),
           ),
         ),

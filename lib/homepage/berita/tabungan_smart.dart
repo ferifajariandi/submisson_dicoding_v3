@@ -122,13 +122,12 @@ class TabunganSmart extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                    top: 50, left: 30, right: 30,),
+                    top: 50, left: 70, right: 30,),
                   child: GestureDetector(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         ButtonRiplay(title: "Simulasi Perhitungan",),
-                        ButtonRiplay(title: "Ringkasan Informasi",)
                       ],
                     ),
                   ),
@@ -157,7 +156,7 @@ class ButtonRiplay extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         color: kPrimaryColor,
       ),
-      width: 170,
+      width: MediaQuery.of(context).size.width / 1.5,
       height: 40,
       child: TextButton(
         onPressed: (){},

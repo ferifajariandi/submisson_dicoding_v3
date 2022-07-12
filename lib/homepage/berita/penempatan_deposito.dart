@@ -78,7 +78,6 @@ class _PenempatanDepositoState extends State<PenempatanDeposito> {
                                 )
                               ]),
                           width: MediaQuery.of(context).size.width,
-                          height: MediaQuery.of(context).size.height * 1.1,
                           child: Container(
                             margin: EdgeInsets.all(5),
 
@@ -296,7 +295,6 @@ class _PenempatanDepositoState extends State<PenempatanDeposito> {
                                     ),
                                   ),
                                   Container(
-                                    width: MediaQuery.of(context).size.width,
                                     child: Padding(
                                       padding: const EdgeInsets.only(
                                           left: 15, right: 20, top: 10),
@@ -428,7 +426,7 @@ class ButtonKirimHasil extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           color: kPrimaryColor,
         ),
-        width: 140,
+        width: MediaQuery.of(context).size.width / 1.5,
         height: 40,
         child: TextButton(
           onPressed: () {},
@@ -437,7 +435,7 @@ class ButtonKirimHasil extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
-              fontSize: 14,
+              fontSize: 16,
             ),
           ),
         ),

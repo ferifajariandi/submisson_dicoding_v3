@@ -116,7 +116,6 @@ class KreditEnamSembilanScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       ButtonKirim69(title: 'Ajukan Kredit69',),
-                      ButtonKirim69(title: 'Ringkasan Produk',),
                     ],
                   ),
                 )
@@ -140,14 +139,14 @@ class ButtonKirim69 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(30, 20,20,20),
+      padding: const EdgeInsets.fromLTRB(70, 20,20,20),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: kPrimaryColor,
         ),
-        width: 150,
-        height: 40,
+        width: MediaQuery.of(context).size.width / 1.5,
+        height: MediaQuery.of(context).size.height / 14,
         child: TextButton(
           onPressed: (){},
           child: Text(
@@ -155,7 +154,7 @@ class ButtonKirim69 extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
-              fontSize: 14,
+              fontSize: 16,
             ),
           ),
         ),

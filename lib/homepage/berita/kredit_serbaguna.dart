@@ -178,7 +178,6 @@ class KreditSerbaguna extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         ButtonRiplay(title: "Ajukan Kredit",),
-                        ButtonRiplay(title: "Lihat Brosur",)
                       ],
                     ),
                   ),
@@ -202,21 +201,24 @@ class ButtonRiplay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-        color: kPrimaryColor,
-      ),
-      width: 170,
-      height: 40,
-      child: TextButton(
-        onPressed: (){},
-        child: Text(
-          title,
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 12,
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(30,20,20,10),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: kPrimaryColor,
+        ),
+        width: MediaQuery.of(context).size.width/1.5,
+        height: 40,
+        child: TextButton(
+          onPressed: (){},
+          child: Text(
+            title,
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 12,
+            ),
           ),
         ),
       ),
