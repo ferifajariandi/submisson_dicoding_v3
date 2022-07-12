@@ -196,7 +196,7 @@ class _CarouselWithIndicatorState extends State<Homepage> {
               ),
               Center(
                 child: Container(
-                  width: MediaQuery.of(context).size.width,
+                  width: MediaQuery.of(context).size.width / 1,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: const BorderRadius.only(
@@ -302,7 +302,7 @@ class _CarouselWithIndicatorState extends State<Homepage> {
 
               // Button ICON CONTAINER KE 2
               Container(
-                width: MediaQuery.of(context).size.width,
+                width: MediaQuery.of(context).size.width / 1,
                 color: Colors.white,
                 child: Padding(
                   padding:
@@ -397,7 +397,7 @@ class _CarouselWithIndicatorState extends State<Homepage> {
 
               //Awal Container button icons 3
               Container(
-                width: MediaQuery.of(context).size.width,
+                width: MediaQuery.of(context).size.width / 1,
                 color: Colors.white,
                 child: Padding(
                   padding:
@@ -492,7 +492,7 @@ class _CarouselWithIndicatorState extends State<Homepage> {
 
 
               Container(
-                width: MediaQuery.of(context).size.width,
+                width: MediaQuery.of(context).size.width / 1,
                 color: Colors.white,
                 child: Padding(
                   padding:
@@ -588,7 +588,7 @@ class _CarouselWithIndicatorState extends State<Homepage> {
                   padding: const EdgeInsets.only(bottom: 10),
                   child: Container(
                     color: Colors.white,
-                    width: MediaQuery.of(context).size.width,
+                    width: MediaQuery.of(context).size.width / 1,
                     child: Column(
                       children: [
                         Padding(
@@ -838,7 +838,7 @@ class _CarouselWithIndicatorState extends State<Homepage> {
               Padding(
                 padding: const EdgeInsets.only(top: 10),
                 child: Container(
-                  width: MediaQuery.of(context).size.width,
+                  width: MediaQuery.of(context).size.width / 1,
                   color: Colors.white,
                   child: Column(
                     children: [
@@ -859,8 +859,6 @@ class _CarouselWithIndicatorState extends State<Homepage> {
                           children: [
                             Image.asset("assets/images/ojk.png", width: 130,),
                             Image.asset("assets/images/lps.png", width: 110, height: 60,),
-                            Image.asset("assets/images/mhn.png", width: 80,),
-                            Image.asset("assets/images/wm.png", width: 40,),
                           ],
                         ),
                       ),

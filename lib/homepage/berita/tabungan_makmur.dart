@@ -81,10 +81,11 @@ class TabunganMakmurScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 25, top: 5),
                     child: Row(
                       children: [
-                        Text("* Suku bunga yang menarik\n"
-                            "* Bunga yang dihitung atas saldo harian\n"
-                            "* Bebas biaya administrasi bulanan\n"
-                            "* Aman, karena simpanan dijamin oleh Lembaga Penjamin")
+                        Expanded(
+                          child: Text("* Suku bunga yang menarik\n"
+                              "* Bunga yang dihitung atas saldo harian\n"
+                              "* Bebas biaya administrasi bulanan\n"),
+                        )
                       ],
                     ),
                   ),

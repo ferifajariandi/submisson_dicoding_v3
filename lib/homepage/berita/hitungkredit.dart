@@ -75,7 +75,6 @@ class _HitungKreditScreenState extends State<HitungKreditScreen> {
                             ]
                         ),
                         width: MediaQuery.of(context).size.width,
-                        height: MediaQuery.of(context).size.width,
                         child: Container(
                           margin: EdgeInsets.all(5),
 
@@ -201,12 +200,12 @@ class _HitungKreditScreenState extends State<HitungKreditScreen> {
                                     ),
                                   ),
                                 ),
+
                                 GestureDetector(
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
                                       ButtonKirimHasil(title: "Hasil",),
-                                      ButtonKirimHasil(title: "Ajukan Kredit",)
                                     ],
                                   ),
                                 )
@@ -243,7 +242,7 @@ class ButtonKirimHasil extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           color: kPrimaryColor,
         ),
-        width: 120,
+        width: MediaQuery.of(context).size.width / 1.5,
         height: 40,
         child: TextButton(
           onPressed: (){},
