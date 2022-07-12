@@ -63,10 +63,10 @@ class KreditUmkmScreen extends StatelessWidget {
                               children: [
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(20, 20, 10, 10),
+                                  const EdgeInsets.fromLTRB(20, 20, 10, 10),
                                   child: Container(
                                     width:
-                                        MediaQuery.of(context).size.width / 4,
+                                    MediaQuery.of(context).size.width / 4,
                                     child: Text(
                                       "Kredit UMKM :",
                                       style: TextStyle(
@@ -75,11 +75,12 @@ class KreditUmkmScreen extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 10),
-                                  child: Expanded(
-                                      child: Text(
-                                          " Fasilitas pinjaman yang diberikan Besar")),
+                                Expanded(
+                                  child: Row(
+                                    children: [
+                                      Text(" Fasilitas pinjaman yang diberikan untuk \n kebutuhan usaha dengan plafon mulai \n dari Rp 15.000.000,"),
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
@@ -108,21 +109,21 @@ class KreditUmkmScreen extends StatelessWidget {
                               children: [
                                 Expanded(
                                     child: Text(
-                                  "1. Suku bunga yang ringan \n2. Persyaratan yang mudah & Proses cepat",
-                                ))
+                                      "1. Suku bunga yang ringan \n2. Persyaratan yang mudah & Proses cepat",
+                                    ))
                               ],
                             ),
                           ),
                           Padding(
                             padding:
-                                const EdgeInsets.only(left: 15, bottom: 10),
+                            const EdgeInsets.only(left: 15, bottom: 10),
                             child: Row(
                               children: [Expanded(child: Text("Agunan :"))],
                             ),
                           ),
                           Padding(
                             padding:
-                                const EdgeInsets.only(left: 15, bottom: 10),
+                            const EdgeInsets.only(left: 15, bottom: 10),
                             child: Row(
                               children: [
                                 Expanded(
@@ -133,15 +134,15 @@ class KreditUmkmScreen extends StatelessWidget {
                           ),
                           Padding(
                             padding:
-                                const EdgeInsets.only(left: 15, bottom: 10),
+                            const EdgeInsets.only(left: 15, bottom: 10),
                             child: Row(
                               children: [
                                 Expanded(
                                     child: Text(
-                                  "Syarat dan Ketentuan",
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline),
-                                ))
+                                      "Syarat dan Ketentuan",
+                                      style: TextStyle(
+                                          decoration: TextDecoration.underline),
+                                    ))
                               ],
                             ),
                           ),
@@ -149,9 +150,8 @@ class KreditUmkmScreen extends StatelessWidget {
                             padding: const EdgeInsets.only(left: 15, bottom: 10),
                             child: Row(
                               children: [
-                                Expanded(
-                                    child: Text(
-                                        "1. Fotocopy KTP suami & istri\n2. Fotocopy KK & Fotocopy Surat Nikah\n3. Fotocopy BPKB & STNK apabila aguna mobil / motor"))
+                                Text(
+                                    "1. Fotocopy KTP suami & istri\n2. Fotocopy KK & Fotocopy Surat Nikah\n3. Fotocopy BPKB & STNK apabila aguna mobil / motor")
                               ],
                             ),
                           ),
@@ -160,7 +160,7 @@ class KreditUmkmScreen extends StatelessWidget {
                             child: GestureDetector(
                               child: Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                MainAxisAlignment.spaceEvenly,
                                 children: [
                                   ButtonPengajuan(
                                     title: "Ajukan Kredit",
